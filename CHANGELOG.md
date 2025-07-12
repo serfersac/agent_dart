@@ -4,6 +4,11 @@ that can be found in the LICENSE file. -->
 
 # Changelog
 
+## 1.0.0-dev.38
+
+- Manually fixes Gradle platform plugin detection.
+- Fixes `base64ct` build failure.
+
 ## 1.0.0-dev.37
 
 - Update `package:flutter_rust_bridge` to `2.11.1`.
