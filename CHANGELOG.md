@@ -4,6 +4,14 @@ that can be found in the LICENSE file. -->
 
 # Changelog
 
+## 1.0.0-dev.39
+
+(These changes are targeting the bundled `cargokit` for Flutter builds.)
+
+- Support Android 16KB page size.
+- Add default `BINDGEN_EXTRA_CLANG_ARGS` for `AndroidEnvironment` during build.
+- Remove hardcoded i686(x86) compilation for Android debug builds.
+
 ## 1.0.0-dev.38
 
 - Manually fixes Gradle platform plugin detection.
