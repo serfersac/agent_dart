@@ -150,6 +150,19 @@ class AndroidEnvironment {
     final toolTempDir =
         Platform.environment['CARGOKIT_TOOL_TEMP_DIR'] ?? targetTempDir;
 
+    final sysroot = path.join(
+      ndkPath,
+      'toolchains',
+      'llvm',
+      'prebuilt',
+      hostArch,
+      'sysroot',
+    );
+
+    final bindgenKey = "BINDGEN_EXTRA_CLANG_ARGS_${target.rust}";
+    final bindgenValue =
+        "--sysroot=$sysroot -I${path.join(sysroot, 'usr', 'include', target.rust)}";
+
     return {
       arKey: arValue,
       ccKey: ccValue,
