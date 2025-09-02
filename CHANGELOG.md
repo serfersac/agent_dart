@@ -4,7 +4,7 @@ that can be found in the LICENSE file. -->
 
 # Changelog
 
-## 1.0.0-dev.39
+## 1.0.0-dev.40
 
 (These changes are targeting the bundled `cargokit` for Flutter builds.)
 
